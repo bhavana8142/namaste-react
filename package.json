@@ -1,0 +1,32 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Bhavana",
+  "scripts": {
+    "start" : "parcel src/index.html",
+    "build" : "parcel build src/index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavana8142/namaste-react.git"
+  },
+  "keywords": [],
+  "author": "bhavana battu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhavana8142/namaste-react/issues"
+  },
+  "homepage": "https://github.com/bhavana8142/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "browserlist": [
+   "last 2 versions"
+
+  ]
+}
