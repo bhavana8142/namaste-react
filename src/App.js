@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 
 
-         
 
 
 
@@ -16,30 +15,21 @@ import Body from "./components/Body";
 
 
 
-
-
-
-
-
-
-
-
-
-
-const AppLayout = ()=>{
+const AppLayout = () => {
     return (
-        <div className = "app">
+        <div>
             <Header />
             <Body />
-            
-            
-
 
         </div>
     )
-}
+};
 
-const root= ReactDOM.createRoot(document.getElementById("root"))
-root.render(<AppLayout />)
+
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<AppLayout />);
 
 

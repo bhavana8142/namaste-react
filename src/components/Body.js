@@ -1,54 +1,42 @@
-import RestaurantCard from "./RestaurantCard";
-import resObj from "../utilis/mockData";
+import ResturentCard from "./RestaurnentCard";
+import resList from "../utils/mockData";
 import { useState } from "react";
 
 
-
-const  resturentsData =resObj.data.data.cards[1].card.card.gridElements.infoWithStyle.restaurants;
-
-
-const Body = () =>{
-    // local state variable  - super powerful variable 
-const [Resturents, setResturents] = useState(resturentsData);
-
-// const [Resturents, setResturents] = useState(resturentsData);
-//  both are same
-// const arr =useState(resturentsData);
-// const Resturents = arr[0];
-// const setResturents = arr[1];
+const Body = () => {
+    /*
     
-// normal variable 
+    const arr = useState(resList);
+    const listOfResturents = arr[0];
+    const setListOfResturents = arr[1];
+    above code can be written as below using array destructuring
 
-//let resturents =resObj.data.data.cards[1].card.card.gridElements.infoWithStyle.restaurants;
+    const [listOfResturents, setListOfResturents] = useState(resList);
+
+    */
+
+    const [listOfResturents, setListOfResturents] = useState(resList);
     return (
-        <div className="body-container">
-            <div className="filter">
-                <button className="filter-btn" onMouseOver={() =>{
-                    // Filter logic for top rated restaurants can be implemented here
-                    const filterList =Resturents.filter((res) => res.info.avgRating >=4.6);
-                    console.log("Top Rated Restaurants:", filterList);
-                    setResturents(filterList);
-                    
-                }
-                
 
-                }>Top Rated Restaurants</button>
+
+
+        <div>
+            <div className="btn">
+                <button className="to-rated" onClick={() => {
+                    const filteredList = listOfResturents.filter((res) => res.info.avgRating > 4.7);
+                    setListOfResturents(filteredList);
+
+                }}>
+                    Top Rated Resturents
+                </button>
             </div>
             <div className="res-container">
-                {
-                    Resturents.map((restaurant) => <RestaurantCard key={restaurant.info.id} resData = {restaurant} />)
-                }
-                
+                {listOfResturents.map((resturent) => {
+                    return <ResturentCard resData={resturent} key={resturent.info.id} />
+                })};
 
-                
             </div>
-                  
-    
-
         </div>
-    
     )
-  
-}
-
+};
 export default Body;

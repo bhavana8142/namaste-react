@@ -1,0 +1,56 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+   
+}
+.nav-items{
+    display: flex;
+  
+}
+.nav-items ul{
+    display: flex;
+   
+   
+}
+.header .nav-items ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.res-logo{
+    width: 200px;
+ 
+   
+   
+    
+}
+.res-card{
+    width: 200px;
+   
+    padding: 5px;
+    margin: 5px;
+    background-color: silver;
+
+ 
+   
+    
+}
+.res-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+
+   
+   
+}
+.to-rated{
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+

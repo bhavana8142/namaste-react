@@ -1,23 +1,27 @@
-import { LOGO_URL } from "../utilis/constants";
+import { LOGO_URL } from "../utils/constants";
 
-const Header =() => {
+const Header = () => {
     return (
         <div className="header">
-            <div className="logo-container">
-                <img className="logo" src= {LOGO_URL} />
+            <div className="logo-con">
+                <img src={LOGO_URL} className="logo" />
+
             </div>
-            <div className ="nav-items">
-                <ul>
+            <div className="nav-items">
+                <ul className="list-items">
                     <li>Home</li>
-                    <li>About us</li>
-                    <li>Contact us</li>
-                    <li> cart</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Cart</li>
                 </ul>
+
+
+
 
             </div>
 
         </div>
     )
-}
+};
 
 export default Header;
