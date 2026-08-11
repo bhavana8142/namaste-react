@@ -3,6 +3,8 @@ import resList from "../utils/mockData";
 import { useState } from "react";
 import { useEffect } from "react";
 import Shimmer from "./shimmer";
+import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 const Body = () => {
@@ -20,6 +22,7 @@ whenever statevariable changes react trigers a reconsilation cycle(rerender the 
     const [listOfResturents, setListOfResturents] = useState([]);
     const [searchText, setsearchText] = useState('');
     const [filterdResturent, setfilterdResturent] = useState([]);
+    const onlinseStaus = useOnlineStatus()
     useEffect(() => {
         fetchData();
 
@@ -41,38 +44,45 @@ whenever statevariable changes react trigers a reconsilation cycle(rerender the 
 
     }
     // conditional rendering
-    return listOfResturents.length === 0 ? <Shimmer /> : (
+    return listOfResturents.length === 0 ? <Shimmer /> :
+
+        onlinseStaus ?
+
+
+            (
 
 
 
-        <div>
-            <div className="filter">
-                <input type="text" value={searchText} onChange={
-                    (e) => setsearchText(e.target.value)
+                <div>
+                    <div className="flex ">
+                        <input className=" h-10 border border-s-black rounded-md m-3" type="text" value={searchText} onChange={
+                            (e) => setsearchText(e.target.value)
 
-                }></input>
-                <button onClick={
-                    () => {
-                        const filterdList = listOfResturents.filter((res) => res.name.toLowerCase().includes(searchText.toLowerCase()))
-                        setfilterdResturent(filterdList);
-                    }
-                }>search</button>
-                <button className="to-rated" onClick={() => {
-                    const filteredList = listOfResturents.filter((res) => res.avgRating <= 3.6);
+                        }></input>
+                        <div>
+                            <button className="border  bg-green-300 rounded-lg px-4 py-2 m-2 " onClick={
+                                () => {
+                                    const filterdList = listOfResturents.filter((res) => res.name.toLowerCase().includes(searchText.toLowerCase()))
+                                    setfilterdResturent(filterdList);
+                                }
+                            }>search</button>
+                        </div>
+                        <button className="border  bg-green-300 rounded-lg px-4 py-2 m-2" onClick={() => {
+                            const filteredList = listOfResturents.filter((res) => res.avgRating <= 3.6);
 
-                    setfilterdResturent(filteredList);
+                            setfilterdResturent(filteredList);
 
-                }}>
-                    Top Rated Resturents
-                </button>
-            </div>
-            <div className="res-container">
-                {filterdResturent.map((resturent) => {
-                    return <ResturentCard resData={resturent} key={resturent.id} />
-                })}
+                        }}>
+                            Top Rated Resturents
+                        </button>
+                    </div>
+                    <div className="flex  flex-wrap">
+                        {filterdResturent.map((resturent) => (
+                            <Link key={resturent.id} to={'/resturents/' + resturent.id}><ResturentCard resData={resturent} /></Link>
+                        ))}
 
-            </div>
-        </div>
-    )
-};
+                    </div>
+                </div>
+            ) : <h2> please check your connection</h2>
+}
 export default Body;
