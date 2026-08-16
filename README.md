@@ -114,3 +114,32 @@ Two Types of Exports/Import
       - 2 types of react hooks
           - useState() - genarate  superpowerful  state variables in react
           - useEffect()
+
+# Redux Toolkit
+
+    -Install librariries
+        - Install @redux/toolkit and react-redux
+        - Build our store
+        -connect  our store to  our app
+        - slice(cartSlice)
+        -dispatch(action)
+        - selector
+
+# types of ttesting (developer)
+
+    - Unit Testing
+    - Integretion Testing
+    - End to End Testing - e2e testing
+
+# setting up testing in our app
+
+    - Install testing library
+    - Install jest
+    - Install  babel dependecies
+    - configure babel
+    - congigure parcel   config file to disabale default babel transpilation
+    - jest - npx just --init
+    -Install jsdom  library
+    - Install @babel/preset-react - to make jsx work in test cases
+    - include @babel/preset-react  inside my bable config
+    - Install @testing-Library/jest-dom
