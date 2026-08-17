@@ -10,10 +10,10 @@ const Header = () => {
     const [btnNameReact, setbtnNameReact] = useState('login')
     const onlineststus = useOnlineStatus()
     const { loggedInUser } = useContext(UserContext)
-    console.log(loggedInUser)
+    //console.log(loggedInUser)
     // subscriong to the store by usig  selector
     const cartItems = useSelector((store) => store.cart.items)
-    console.log(cartItems)
+    //console.log(cartItems)
 
     return (
         <div className="flex justify-between bg-pink-300 shadow-xl sm:bg-amber-300 xl:bg-gray-500">
