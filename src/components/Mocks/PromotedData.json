@@ -1,0 +1,75 @@
+{
+    "resData": {
+        "id": "1352704",
+        "name": "Biryon",
+        "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2026/6/22/0be81df7-3502-4b2b-a237-6f48ef9bd538_d245de74-3b90-4553-b6ec-5bf297dcffee.jpeg_compressed",
+        "locality": "Koramangala",
+        "areaName": "Koramangala",
+        "costForTwo": "₹400 for two",
+        "cuisines": [
+            "Biryani",
+            "South Indian",
+            "Indian"
+        ],
+        "avgRating": 4.3,
+        "parentId": "795010",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "4",
+        "promoted": true,
+        "adTrackingId": "cid=79d3f4d1-6f5f-4189-b303-286a9244d227~p=0~adgrpid=79d3f4d1-6f5f-4189-b303-286a9244d227#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=1352704~plpr=COLLECTION~eid=c8e81770-ae84-4928-80e7-b6dd58fa9b1e~srvts=1787032344301~collid=83639",
+        "sla": {
+            "deliveryTime": 19,
+            "lastMileTravel": 1.4,
+            "serviceability": "SERVICEABLE",
+            "slaString": "15-20 mins",
+            "lastMileTravelString": "1.4 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2026-08-19 01:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "textExtendedBadges": {},
+                "textBased": {},
+                "imageBased": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "logoCtx": {
+                "text": "BENEFITS"
+            }
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {},
+            "commsStyling": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "isNewlyOnboarded": true,
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+        "campaignId": "79d3f4d1-6f5f-4189-b303-286a9244d227",
+        "priceComparisonComms": {}
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "id": "1391945",
+    "name": "Arambam - Flavours of South",
+    "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/6/17/69d4f1da-65db-425c-b3f5-f9445e493477_1391945.jpg",
+    "locality": "Koramangala",
+    "areaName": "Koramangala",
+    "costForTwo": "₹200 for two",
+    "cuisines": [
+        "South Indian",
+        "Healthy Food"
+    ],
+    "avgRating": 4,
+    "veg": true,
+    "parentId": "581903",
+    "avgRatingString": "4.0",
+    "totalRatingsString": "26",
+    "promoted": true,
+    "adTrackingId": "cid=66347999-ccfb-4769-8953-84a8d8b51c74~p=0~adgrpid=66347999-ccfb-4769-8953-84a8d8b51c74#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=1391945~plpr=COLLECTION~eid=02c1e278-52a0-4556-baab-da4d602a7e3d~srvts=1787030818454~collid=83639",
+    "sla": {
+        "deliveryTime": 14,
+        "lastMileTravel": 0.9,
+        "serviceability": "SERVICEABLE",
+        "slaString": "10-15 mins",
+        "lastMileTravelString": "0.9 km",
+        "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+        "nextCloseTime": "2026-08-18 15:00:00",
+        "opened": true
+    },
+    "badges": {
+        "imageBadges": [
+            {
+                "imageId": "android/static-assets/icons/big_rx.png",
+                "description": "bolt!"
+            }
+        ]
+    },
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+        "entityBadges": {
+            "imageBased": {
+                "badgeObject": [
+                    {
+                        "attributes": {
+                            "imageId": "android/static-assets/icons/big_rx.png",
+                            "description": "bolt!"
+                        }
+                    }
+                ]
+            },
+            "textExtendedBadges": {},
+            "textBased": {}
+        }
+    },
+    "aggregatedDiscountInfoV3": {
+        "header": "50% OFF",
+        "discountTag": "FLAT DEAL",
+        "logoCtx": {
+            "text": "BENEFITS"
+        }
+    },
+    "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {},
+        "commsStyling": {}
+    },
+    "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+        }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "isNewlyOnboarded": true,
+    "restaurantOfferPresentationInfo": {},
+    "externalRatings": {
+        "aggregatedRating": {
+            "rating": "--"
+        }
+    },
+    "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+    "campaignId": "66347999-ccfb-4769-8953-84a8d8b51c74",
+    "priceComparisonComms": {}
+}

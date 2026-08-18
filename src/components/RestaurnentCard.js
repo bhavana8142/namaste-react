@@ -28,6 +28,7 @@ const ResturentCard = (props) => {
 
 export const withResturentCardLabel = (ResturentCard) => {
     return (props) => {
+        console.log(props)
         return (
             <div>
                 <label className="absolute bg-black text-white p-2 m-2 rounded-lg">promoted</label>
